@@ -1,4 +1,4 @@
-# rapidminer.core.scoring
+# rapidminer
 
 ## Scoring
 

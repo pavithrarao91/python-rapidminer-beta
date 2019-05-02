@@ -1,4 +1,4 @@
-# rapidminer.core.studio
+# rapidminer
 
 ## Studio
 Class for using a locally installed RapidMiner Studio instance. You can read from and write to the repositories defined in Studio (and use even remote repositories this way) and you can execute processes.

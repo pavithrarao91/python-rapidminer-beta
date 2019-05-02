@@ -1,4 +1,4 @@
-# rapidminer.core.server
+# rapidminer
 
 ## Server
 
