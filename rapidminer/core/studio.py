@@ -172,7 +172,7 @@ class Studio(Connector):
         remove_dirs = [output_dir]
         try:
             input_files = []
-            if (inputs is not None):
+            if inputs is not None and len(inputs) > 0:
                 input_dir = tempfile.mkdtemp(prefix=self.__TMP_INPUT_DIR_PREFIX)
                 remove_dirs.append(input_dir)
                 for i in range(len(inputs)):

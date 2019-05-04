@@ -21,6 +21,8 @@ import tempfile
 import jwt
 import json
 import xml.etree.ElementTree as et
+import pkg_resources
+pkg_resources.require("pandas>=0.23.0")
 import pandas as pd
 import pickle
 import os
@@ -197,7 +199,7 @@ class Server(Connector):
         :param ignore_cleanup_errors: boolean. Determines if any error during temporary data cleanup should lead to an error. Default value is True
         :return: the results of the RapidMiner process, as a list of pandas DataFrame objects.
         """
-        if not ((isinstance(inputs, tuple) or isinstance(inputs, list))):
+        if inputs is not None and not ((isinstance(inputs, tuple) or isinstance(inputs, list))):
             inputs = [inputs]
         if "queue" in kwargs:
             queue = kwargs["queue"]
